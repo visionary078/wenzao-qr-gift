@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1a3a2a">
+<title>问造社 · 一份小礼物</title>
+<style>
+  :root {
+    --bg: #f6f1e8;
+    --ink: #1a2e24;
+    --moss: #2f5d45;
+    --leaf: #4a8f63;
+    --gold: #c4a35a;
+    --cream: #fffaf2;
+    --soft: #e8dfd0;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    min-height: 100dvh;
+    line-height: 1.65;
+  }
+  .wrap {
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 28px 22px 48px;
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    color: var(--moss);
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+  .badge::before {
+    content: "";
+    width: 8px; height: 8px;
+    background: var(--leaf);
+    border-radius: 2px;
+    box-shadow: 6px 0 0 var(--gold), 12px 0 0 var(--moss);
+  }
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 1.25;
+    margin-bottom: 10px;
+  }
+  .tagline {
+    color: var(--moss);
+    font-size: 15px;
+    margin-bottom: 28px;
+  }
+  .card {
+    background: var(--cream);
+    border: 1px solid var(--soft);
+    border-radius: 18px;
+    padding: 22px 20px;
+    margin-bottom: 16px;
+    box-shadow: 0 8px 24px rgba(26,46,36,0.06);
+  }
+  .card h2 {
+    font-size: 15px;
+    color: var(--moss);
+    letter-spacing: 0.08em;
+    margin-bottom: 10px;
+  }
+  .card p { font-size: 15px; color: #2a3d34; }
+  .products {
+    display: grid;
+    gap: 10px;
+    margin-top: 12px;
+  }
+  .prod {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    padding: 12px 14px;
+    background: #f3ebe0;
+    border-radius: 12px;
+  }
+  .prod .dot {
+    flex: 0 0 28px;
+    height: 28px;
+    border-radius: 8px;
+    background: var(--moss);
+    color: #fff;
+    display: grid;
+    place-items: center;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .prod strong { display: block; font-size: 14px; margin-bottom: 2px; }
+  .prod span { font-size: 13px; color: #5a6b62; }
+  .dedication {
+    border-left: 3px solid var(--gold);
+    padding: 8px 0 8px 14px;
+    font-style: italic;
+    color: #3d5248;
+    min-height: 2.5em;
+  }
+  .dedication:empty::before {
+    content: "（在此写下给你的一句话——可在 gift.html 里改）";
+    color: #9aa89f;
+    font-style: normal;
+    font-size: 13px;
+  }
+  .invite {
+    text-align: center;
+    padding: 22px 16px;
+    background: linear-gradient(160deg, #2f5d45, #1a3a2a);
+    color: #f6f1e8;
+    border-radius: 18px;
+    margin-top: 8px;
+  }
+  .invite p { font-size: 15px; margin-bottom: 6px; opacity: 0.92; }
+  .invite .cta {
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+  }
+  footer {
+    margin-top: 28px;
+    text-align: center;
+    font-size: 12px;
+    color: #8a978f;
+  }
+  .tree {
+    width: 64px;
+    height: 72px;
+    margin: 0 auto 18px;
+    display: block;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="badge">WENZAOSHE · GIFT</div>
+    <svg class="tree" viewBox="0 0 64 72" aria-hidden="true">
+      <rect x="28" y="52" width="8" height="14" fill="#6b4a2e"/>
+      <rect x="24" y="62" width="16" height="6" rx="1" fill="#8a6a42"/>
+      <rect x="20" y="38" width="8" height="8" fill="#4a8f63"/>
+      <rect x="28" y="38" width="8" height="8" fill="#2f5d45"/>
+      <rect x="36" y="38" width="8" height="8" fill="#4a8f63"/>
+      <rect x="16" y="30" width="8" height="8" fill="#2f5d45"/>
+      <rect x="24" y="30" width="8" height="8" fill="#4a8f63"/>
+      <rect x="32" y="30" width="8" height="8" fill="#2f5d45"/>
+      <rect x="40" y="30" width="8" height="8" fill="#4a8f63"/>
+      <rect x="20" y="22" width="8" height="8" fill="#4a8f63"/>
+      <rect x="28" y="22" width="8" height="8" fill="#2f5d45"/>
+      <rect x="36" y="22" width="8" height="8" fill="#4a8f63"/>
+      <rect x="24" y="14" width="8" height="8" fill="#2f5d45"/>
+      <rect x="32" y="14" width="8" height="8" fill="#4a8f63"/>
+      <rect x="28" y="6" width="8" height="8" fill="#2f5d45"/>
+      <rect x="26" y="2" width="4" height="4" fill="#c4a35a"/>
+    </svg>
+    <h1>你好，这是问造社的一份小礼物</h1>
+    <p class="tagline">带着问题来，把作品造完。</p>
+
+    <div class="card">
+      <h2>写给你</h2>
+      <p class="dedication" id="dedication">谢谢你愿意停下来扫一扫。这棵像素树是我们亲手给桌面 CNC 做的小礼品——希望它能提醒你：创作可以从一个问题开始。</p>
+    </div>
+
+    <div class="card">
+      <h2>问造社是什么</h2>
+      <p>杨浦的少儿 AI 创作空间。孩子带着想法来，老师带着当场把作品做完能演示的一版。</p>
+      <div class="products">
+        <div class="prod">
+          <div class="dot">半</div>
+          <div>
+            <strong>半天技能营</strong>
+            <span>约 3–3.5 小时一场：开场 → 技能 → 造物 → 发布</span>
+          </div>
+        </div>
+        <div class="prod">
+          <div class="dot">席</div>
+          <div>
+            <strong>问造席</strong>
+            <span>一对一席／三人席 · 预约一个席位，把作品造完</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="invite">
+      <p>下次路过杨浦，欢迎带孩子来坐坐。</p>
+      <div class="cta">问 · 造 · 完</div>
+    </div>
+
+    <footer>问造社 Wenzao · 扫码礼品页 · 可自行改 dedication</footer>
+  </div>
+</body>
+</html>
